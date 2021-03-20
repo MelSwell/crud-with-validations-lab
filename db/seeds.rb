@@ -1,0 +1,1 @@
+Song.create(title: "Blue Sky", released: true, release_year: 1997, artist_name: "A Great Musician", genre: "Pop")
