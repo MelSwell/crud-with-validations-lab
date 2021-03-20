@@ -1,0 +1,9 @@
+<h1>Song Title: <%= @song.title %></h1><br>
+<h3>Artist: <%= @song.artist_name %></h3><br>
+<h3>Genre: <%= @song.genre %></h3><br>
+<% if @song.release_year %>
+  <h3>Released in: <%= @song.release_year %></h3>
+<% end %>
+<%= button_to "Edit Song", edit_song_path(@song), method: :get %><br>
+<%= button_to "Delete Song", song_path(@song), method: :delete, data: { confirm: "Are you sure?" } %><br>
+<%= button_to "Back to all songs", songs_path, method: :get %>
